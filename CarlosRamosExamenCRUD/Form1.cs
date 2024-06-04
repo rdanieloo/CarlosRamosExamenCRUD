@@ -7,15 +7,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+<<<<<<< HEAD
 using CarlosRamosExamenCRUD.Data;
 using CarlosRamosExamenCRUD.Data.Modelos;
 using static System.Net.Mime.MediaTypeNames;
 using System.IO; // Agregamos esta línea para usar la clase archivo
+=======
+>>>>>>> 0820bb166d729fff25819f622d61df8128c8ac24
 
 namespace CarlosRamosExamenCRUD
 {
     public partial class Form1 : Form
     {
+<<<<<<< HEAD
         //Instancia Clscone de la clase conexionMySQL, maneja la conexion con nuestra base de datos y las operaciones CRUD
 
         conexionMySQL Clscone = new conexionMySQL();
@@ -254,12 +258,18 @@ namespace CarlosRamosExamenCRUD
         private void label1_Click(object sender, EventArgs e)
         {
 
+=======
+        public Form1()
+        {
+            InitializeComponent();
+>>>>>>> 0820bb166d729fff25819f622d61df8128c8ac24
         }
 
         private void label5_Click(object sender, EventArgs e)
         {
 
         }
+<<<<<<< HEAD
 
         private void botonBuscar_Click(object sender, EventArgs e)
         {
@@ -484,3 +494,7 @@ namespace CarlosRamosExamenCRUD
 
 
 
+=======
+    }
+}
+>>>>>>> 0820bb166d729fff25819f622d61df8128c8ac24

@@ -5,7 +5,10 @@ using System.Text;
 using System.Threading.Tasks;
 using MySql.Data.MySqlClient;
 using System.Windows.Forms;
+<<<<<<< HEAD
 using CarlosRamosExamenCRUD.Data.Modelos;
+=======
+>>>>>>> 0820bb166d729fff25819f622d61df8128c8ac24
 
 namespace CarlosRamosExamenCRUD.Data
 {
@@ -20,6 +23,7 @@ namespace CarlosRamosExamenCRUD.Data
         public conexionMySQL()
         {
             connection = new MySqlConnection(connectionString);
+<<<<<<< HEAD
 
         }
 
@@ -111,6 +115,16 @@ namespace CarlosRamosExamenCRUD.Data
 
 
                 //Parametros
+=======
+        }
+
+        public void Insertar(string Nombre, string SKU, string Proveedor, string Categoria, decimal Costo, decimal Precio_de_venta, DateTime Fecha_de_registro, int Disponible)
+        {
+            try
+            {
+                string query = "INSERT INTO productos (Nombre, SKU, Proveedor, Categoria, Costo, Precio_de_venta, Fecha_de_registro, Disponible) VALUES (@Nombre, @SKU, @Proveedor, @Categoria, @Costo, @Precio_de_venta, @Fecha_de_registro, @Disponible)";
+
+>>>>>>> 0820bb166d729fff25819f622d61df8128c8ac24
                 MySqlCommand cmd = new MySqlCommand(query, connection);
                 cmd.Parameters.AddWithValue("@Nombre", Nombre);
                 cmd.Parameters.AddWithValue("@SKU", SKU);
@@ -120,20 +134,28 @@ namespace CarlosRamosExamenCRUD.Data
                 cmd.Parameters.AddWithValue("@Precio_de_venta", Precio_de_venta);
                 cmd.Parameters.AddWithValue("@Fecha_de_registro", Fecha_de_registro);
                 cmd.Parameters.AddWithValue("@Disponible", Disponible);
+<<<<<<< HEAD
                 cmd.Parameters.AddWithValue("@Imagen", Imagen); 
 
+=======
+>>>>>>> 0820bb166d729fff25819f622d61df8128c8ac24
                 connection.Open();
                 cmd.ExecuteNonQuery();
             }
             catch (Exception ex)
             {
+<<<<<<< HEAD
                 MessageBox.Show("Oops!! Cometiste un error al agregar el registro: " + ex.Message);
+=======
+                MessageBox.Show("Error al agregar el registro: " + ex.Message);
+>>>>>>> 0820bb166d729fff25819f622d61df8128c8ac24
             }
             finally
             {
                 connection.Close();
             }
         }
+<<<<<<< HEAD
 
 
 
@@ -336,8 +358,14 @@ namespace CarlosRamosExamenCRUD.Data
         {
             throw new NotImplementedException();
         }
+=======
+>>>>>>> 0820bb166d729fff25819f622d61df8128c8ac24
     }
 }
 
 
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> 0820bb166d729fff25819f622d61df8128c8ac24
