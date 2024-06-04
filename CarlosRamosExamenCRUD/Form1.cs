@@ -292,8 +292,8 @@ namespace CarlosRamosExamenCRUD
                 {
                     // Si no se encontraron productos con el ID, mostramos un mensaje
                     MessageBox.Show("Oops!!! \nNo se encontraron productos con el ID :(");
-                }
-            }
+        }
+    }
             else
             {
                 // Si el usuario no ingresó un ID válido, mostrar un mensaje
@@ -319,7 +319,7 @@ namespace CarlosRamosExamenCRUD
                 // Mostramos la imagen del producto en el pictureBoxImagen
                 MemoryStream ms = new MemoryStream(producto.Imagen);
                 pictureBoxImagen.Image = System.Drawing.Image.FromStream(ms);
-            }
+}
             else
             {
                 // Limpiamos el pictureBoxImagen 

@@ -341,8 +341,8 @@ namespace CarlosRamosExamenCRUD.Data
                         producto.Imagen = ObtenerImagenPorDefecto();
                     }
                     productos.Add(producto);
-                }
-            }
+    }
+}
             catch (Exception ex)
             {
                 MessageBox.Show("Error al leer los datos: " + ex.Message);
@@ -363,7 +363,7 @@ namespace CarlosRamosExamenCRUD.Data
     }
 }
 
-
+    
 <<<<<<< HEAD
 
 =======
